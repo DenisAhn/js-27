@@ -22,8 +22,7 @@ describe('grace period utils', () => {
 
     it('should fetch logic name with spaces in logic name', () => {
         expect(fetchGracePeriodLogicFromMapping('123', ' base :124, 123 ; test :1234').trim()).toBe(
-            'base'
-        )
+            'base')
     })
 
     //@TODO  добавил trim() в тест так как получал "base " а тест ждидает "base" без пробела в конце.
